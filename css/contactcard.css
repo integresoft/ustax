@@ -1,0 +1,89 @@
+.specf > input{
+    border:none;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    outline:none;
+    width:75%;
+    padding:15px;
+  }
+  .specf > select{
+    border:none;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    outline:none;
+    width:80%;
+    padding:15px;
+  }
+  .specf > textarea{
+    
+    border-bottom: 1px solid rgb(46, 46, 46);
+    outline:none;
+    width:75%;
+    padding:15px;
+  }
+  
+  
+  
+  
+  .specf > h1, input::-webkit-input-placeholder, button, select, select::-webkit-input-placeholder, textarea, textarea::-webkit-input-placeholder {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  form h1 {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  input, select {
+    margin: 40px 25px;
+    width: 20%;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px rgb(34, 34, 34);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    
+    
+    
+    background-repeat: no-repeat;
+    color: rgb(53, 53, 53);
+  }
+ textarea {
+    margin: 40px 25px;
+    width: 20%;
+    display: block;
+   
+    padding: 10px 0;
+    border-bottom: solid 1px rgb(34, 34, 34);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    
+    
+    
+    background-repeat: no-repeat;
+    color: rgb(53, 53, 53);
+  }
+  input:focus, input:valid, select:focus, select:valid, textarea:focus, textarea:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder, select:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: rgb(29, 29, 29);
+    font-size: 11px;
+    transform: translateY(-15px);
+    visibility: visible !important;
+  }
+  .specf button {
+    border: none;
+    background: rgb(19, 19, 19);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 82%;
+    color: white;
+    margin-left: 16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  .specf button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  }

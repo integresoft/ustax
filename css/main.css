@@ -162,6 +162,8 @@ body{
     color:rgb(141, 141, 141);
     padding:30px;
     width:100%;
+    overflow: auto;
+    overflow-x: hidden;
   }
   .footer h2, h1, h3{
     font-weight:lighter;
@@ -170,6 +172,7 @@ body{
     float:left;
     width:15%;
     position:relative;
+    overflow: auto;
   }
   .sect a{
     color:rgb(141, 141, 141);
@@ -196,4 +199,29 @@ body{
   }
   .sect  a:hover{
     text-decoration: underline;
+  }
+  .imgside{
+    width:50%;
+    float:left;
+  }
+  .specf{
+    width:42%;
+    float:left;
+    padding:66px;
+  }
+  .contactcard{
+    position:relative;
+    top:-39px;
+  }
+  .specf input, .specf button, .specf select, .specf textarea{
+    font-family:'Open Sans';
+    font-weight:lighter;
+  }
+  .pin{
+    width:6%;
+    float:left;
+  }
+  .address p{
+    position:relative;
+    left:20px;
   }
