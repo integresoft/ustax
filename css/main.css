@@ -5,6 +5,7 @@ body{
     padding:0;
     font-family:'Open Sans';
     font-weight:400;
+    overflow-x:hidden;
 }
 :root {
     --purple: #875F9A;
@@ -75,6 +76,8 @@ body{
   }
   .banner{
     color:white;
+    position:relative;
+    top:-40px;
   }
   .standard-purple-btn{
     padding:14px;
@@ -92,6 +95,7 @@ body{
   .standardimage{
     width:50%;
     float:left;
+    border-radius:7.5px;
   }
   .centered1{
     padding:30px;
@@ -103,4 +107,93 @@ body{
     right:-35px;
     width:95%
   }
-  
+  .serviceexchange{
+    padding:60px;
+    
+  }
+  .exchange{
+    text-align:center;
+  }
+  .exchange a{
+    color:var(--spcpurple);
+    text-decoration: none;
+  }
+  .serviceexchange h2{
+    font-weight:lighter;
+    color:var(--spcpurple);
+    
+  }
+  .briefdesc{
+    padding:60px;
+    width:90%;
+  }
+  .descs{
+    width:45%;
+    float:left;
+  }
+  .descs h2{
+    font-weight:lighter;
+    color:var(--spcpurple);
+  }
+  .lists{
+    position:relative;
+    top:-40px;
+  }
+  .rightimage{
+    border-radius:7.5px;
+    width:55%;
+    position:relative;
+    left:40px;
+    top:30px;
+  }
+  .getintouch{
+    background:rgb(255, 255, 255);
+    color:black;
+    padding:40px;
+  }
+  .getintouch h2{
+    font-weight:lighter;
+  }
+  .serviceexchange{
+    background:rgb(243, 243, 243);
+  }
+  .footer{
+    background:rgb(27, 27, 27);
+    color:rgb(141, 141, 141);
+    padding:30px;
+    width:100%;
+  }
+  .footer h2, h1, h3{
+    font-weight:lighter;
+  }
+  .sect{
+    float:left;
+    width:15%;
+    position:relative;
+  }
+  .sect a{
+    color:rgb(141, 141, 141);
+    text-decoration: none;
+  }
+  .sect li{
+    text-decoration: none;
+    list-style-type: none;
+    padding:10px;
+  }
+  .bottom{
+    background:rgb(27, 27, 27);
+    color:white;
+    padding:30px;
+  }
+  .sections{
+    position:relative;
+    left:40px;
+    color:rgb(141, 141, 141);
+  }
+  .bottom{
+    color:rgb(141, 141, 141);
+    width:100%;
+  }
+  .sect  a:hover{
+    text-decoration: underline;
+  }

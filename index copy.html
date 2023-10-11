@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- root color #875F9A (WISTERIA PURPLE), White, Black -->
     <script src="dropdown.js"></script>
-    
+    <script src="select.js"></script>
 </head>
 <body>
     <div class="nav">
-        <img src="images/ustechdesign (2).png" alt="ustechdesign-logo-here" style="width:16%;">
+        <img src="" alt="ustechdesign-logo-here">
         <div class="lists">
             <div class="navitem currentnav">
             <a href="index.html">HOME</a>
@@ -44,7 +44,7 @@
         <br><br><br><br><br><br>
         
     </div>
-    <hr style="color:#875F9A; position:relative; top:-55px;">
+    <hr style="color:#875F9A; position:relative; top:-15px;">
     <div class="centered1">
         <img src="https://images.unsplash.com/photo-1695030306817-38c591d61885?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2121&q=80" 
         alt="leftimage-perfectsquare borderradius7.5" class="standardimage">
@@ -68,7 +68,11 @@
     </div>
     <div class="serviceexchange"> <!--THE DEFAULT IS TECHNICAL DESIGN, BOTH OTHER TABS WILL BE AUTO-DISABLED, AND FIRST PAGE WILL
     DISSAPEAR AND ANOTHER WILL APPEAR UPON JAVASCRIPT CLICK-->
-        
+        <div class="exchange">
+            <a style="border-bottom:2px solid var(--spcpurple);" onclick="sobjectHide()">Technical Design</a>
+            <a style="cursor: pointer;" onclick="objectHide()">Item 2</a>
+            <a onclick="_objectHide()">Item 3</a>
+        </div>
         <div class="exchangeitems">
             <div class="tech">
             <h2>TECHNICAL DESIGN</h2>
@@ -81,7 +85,9 @@
         </div>
         
             <div class="item2-exchange" id="item2-exchange">
-            
+            <script>
+                document.getElementById("item2-exchange").style.display = 'none';
+            </script>
             <h2>ITEM B</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam perspiciatis amet asperiores perferendis quam, iure quisquam blanditiis. 
                 Itaque officia impedit praesentium sapiente maiores veritatis nemo ab atque cum iste.</P>
@@ -91,8 +97,10 @@
                         Itaque officia impedit praesentium sapiente maiores veritatis nemo ab atque cum iste.</P>
         </div>
         <div class="item3-exchange" id="item3-exchange">
-            
-            <h2>ITEM C</h2>
+            <script>
+                document.getElementById("item3-exchange").style.display = 'none';
+            </script>
+            <h2>ITEM 3</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam perspiciatis amet asperiores perferendis quam, iure quisquam blanditiis. 
                 Itaque officia impedit praesentium sapiente maiores veritatis nemo ab atque cum iste.</P>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam perspiciatis amet asperiores perferendis quam, iure quisquam blanditiis. 
@@ -105,73 +113,76 @@
         </div>
         
     </div>
-    <div class="briefdesc">
-        <div class="descs">
-            <h2><!--litefont --> ABOUT LILI</h2>
-        <p style="font-size:17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
-        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
-        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
-        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
-        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
-        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
-        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.</p>
-
-        
+    <div class="targets">
+        <div class="targetcolumn">
+            <img src="" alt="accuracy">
+            <h2><!--USE LITE FONT--> ACCURACY</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, voluptates error eveniet expedita saepe repellat recusandae eum atque iure 
+                repellendus numquam eaque ratione. Voluptate perferendis cum distinctio minus nulla! Eligendi?</p>
         </div>
-<!-- INSERT INTERACTIVE PHOTO GALLERY HERE-->
-        <img src="https://images.unsplash.com/photo-1471039497385-b6d6ba609f9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="rightimage perfectsquare" class="rightimage">
-    </div><br>
+        <div class="targetcolumn">
+            <img src="" alt="transparency">
+            <h2><!--USE LITE FONT--> TRANSPARENCY</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, voluptates error eveniet expedita saepe repellat recusandae eum atque iure 
+                repellendus numquam eaque ratione. Voluptate perferendis cum distinctio minus nulla! Eligendi?</p>
+        </div>
+        <div class="targetcolumn">
+            <img src="" alt="FLEXIBILITY">
+            <h2><!--USE LITE FONT--> FLEXIBILITY</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, voluptates error eveniet expedita saepe repellat recusandae eum atque iure 
+                repellendus numquam eaque ratione. Voluptate perferendis cum distinctio minus nulla! Eligendi?</p>
+        </div>
+    </div>
     
-
+    <div class="briefdesc">
+        <h2><!--litefont --> ABOUT LILI</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
+        perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
+            perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates possimus porro harum maxime in quasi adipisci eum ratione, 
+                perspiciatis nesciunt doloribus, ducimus a distinctio dolore delectus mollitia ipsum laboriosam.</p>
+        <img src="" alt="rightimage perfectsquare">
+    </div>
+    <div class="partners"> <!--EVEN ROWS OF THREE LOGOS-->
+        <a href="">PARTNER 1</a>
+        <a href="">PARTNER 2</a>
+        <a href="">PARTNER 3</a>
+        <a href="">PARTNER 4</a>
+        <a href="">PARTNER 5</a>
+        <a href="">PARTNER 6</a>
+    </div>
     <div class="getintouch">
         <h2>LET'S GET IN TOUCH</h2>
-        <p>Ready to begin? Contact one of our associates to begin the process.</p>
-        <button class="standard-purple-btn">CONTACT US</button>
+        <button>CONTACT US</button>
     </div>
     <div class="footer">
         <div class="sect">
             <!-- PLACE LOGO HERE-->
-            <img src="images/Untitled (3).png" alt="logo" style="width:100%;">
+            <img src="" alt="logo">
         </div>
-        <div class="sections">
-            <div class="sect">
+        <div class="sect">
             <h3>SITE MAP</h3>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Resource Center</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Advanced</a></li>
-           
-            
-            
-            
-            
-            
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Gallery</a>
+            <a href="#">Resource Center</a>
+            <a href="#">Careers</a>
+            <a href="#">Advanced</a>
         </div>
         <div class="sect">
             <h3>LEGAL</h3>
-            <li> <a href="#">Privacy</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">CCPA</a></li>
+            <a href="#">Privacy</a>
+            <a href="#">Legal</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">CCPA</a>
         </div>
-        </div>
-        
-        
-    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="bottom">
+        <p>© 2010-2023 Technical Design and Drafting (TDD). All rights reserved.</p> <p> <!--floatrighttext--> Designed by <img src="" alt="flowbird-logo"></p>
     </div>
-<div class="bottom">
-        <p style="float:left;">© 2010-2023 Technical Design and Drafting (TDD). All rights reserved.</p> <p style="float:left;"> <!--floatrighttext-->&nbsp; Designed by <img src="" alt="flowbird-logo"></p>
-        <br>
     </div>
+
 </body>
 </html>
